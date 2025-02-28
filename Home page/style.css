@@ -46,8 +46,16 @@ html {
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--white-color);
+  background-image: url("https://t4.ftcdn.net/jpg/01/76/67/25/360_F_176672598_cJ4yPCFhxvDXm9Cu7vDLIcXpvTMQJ9zm.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  
+
 }
+
 
 ul {
   list-style: none;
@@ -219,19 +227,7 @@ a {
   right: 1.5rem;
 }
 
-.nav__social {
-  column-gap: 1rem;
-}
 
-.nav__social-link {
-  color: var(--white-color);
-  font-size: 1.5rem;
-  transition: transform .4s;
-}
-
-.nav__social-link:hover {
-  transform: translateY(-.25rem);
-}
 
 /* Show menu */
 .show-menu {
@@ -278,4 +274,92 @@ a {
     align-items: center;
     column-gap: 3.5rem;
   }
+}
+/* Add margin or padding to ensure content appears below navbar */
+main {
+  padding-top: calc(var(--header-height) + 2rem); /* Adjust spacing based on your navbar height */
+}
+.functions{
+  height: fit-content;
+  width: 80vw;
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: rgba(255 255 255 0.7);
+}
+.hostel-bazaar {
+  display: flex;
+  justify-content: flex-start;
+  padding: 40px;
+}
+
+.hostel-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  margin-left: 80px; /* Moves the box slightly to the left */
+}
+
+.image-box {
+  position: relative;
+  flex: 1;
+  padding: 10px;
+}
+
+.image-box img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 10px;
+  display: block;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-10deg); /* Center & tilt */
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6);
+}
+
+
+.content-box {
+  flex: 2;
+  padding: 20px;
+}
+
+.content-box h1 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.content-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content-box ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.highlight {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 10px;
 }

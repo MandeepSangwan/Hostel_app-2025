@@ -1,112 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
-</head>
-<link rel="stylesheet" href="style.css">
-<body>
-    <div class="combined">
-        <div class="container ">
-            <div class="first2">
-                <div class="box1 box">Hostel bazaar</div>
-                <div class="box2 box">Room-Mate finder</div>
-            </div>
-            <div class="second2">
-                <div class="box3 box">Lost and found</div>
-                <div class="box4 box">Study Buddy</div>
-            </div>
-        </div>
-       <!--==================== HEADER ====================-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <!--==================== HEADER ====================-->
       <header class="header" id="header">
         <nav class="nav container">
-            <a href="#" class="nav__logo">
-   <div class="nav__logo-container">
-      <img src="dGJRp2DDTeWPYotJLVx2Gw.jpeg" alt="Logo" class="nav__logo-img">
-      <nav class="nav__logo-text">Find. Connect. Thrive – With Hostel Buddy!</nav>
-   </div>
-</a>
+          <a href="#" class="nav__logo">
+            <div class="nav__logo-container">
+              <img src="dGJRp2DDTeWPYotJLVx2Gw.jpeg" alt="Logo" class="nav__logo-img" />
+              <span class="nav__logo-text">Find. Connect. Thrive – With Hostel Buddy!</span>
+            </div>
+          </a>
 
-             
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">About Us</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Rules & Regulations</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Settings</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+            </ul>
+          </div>
 
-           <div class="nav__menu" id="nav-menu">
-              <ul class="nav__list">
-                 <li class="nav__item">
-                    <a href="#" class="nav__link">
-                       <i class="ri-arrow-right-up-line"></i>
-                       <span>Home</span>
-                    </a>
-                 </li>
-
-                 <li class="nav__item">
-                    <a href="#" class="nav__link">
-                       <i class="ri-arrow-right-up-line"></i>
-                       <span>About Us</span>
-                    </a>
-                 </li>
-
-                 <li class="nav__item">
-                    <a href="#" class="nav__link">
-                       <i class="ri-arrow-right-up-line"></i>
-                       <span>Rules and regulations</span>
-                    </a>
-                 </li>
-
-                 <li class="nav__item">
-                    <a href="#" class="nav__link">
-                       <i class="ri-arrow-right-up-line"></i>
-                       <span>Settings</span>
-                    </a>
-                 </li>
-
-                 <li class="nav__item">
-                    <a href="#" class="nav__link">
-                       <i class="ri-arrow-right-up-line"></i>
-                       <span>Contact</span>
-                    </a>
-                 </li>
-              </ul>
-
-              <!-- Close button -->
-              <div class="nav__close" id="nav-close">
-                 <i class="ri-close-large-line"></i>
-              </div>
-
-              <div class="nav__social">
-                 <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
-                    <i class="ri-instagram-line"></i>
-                 </a>
-
-                 <a href="https://github.com/" target="_blank" class="nav__social-link">
-                    <i class="ri-github-line"></i>
-                 </a>
-
-                 <a href="https://dribbble.com/" target="_blank" class="nav__social-link">
-                    <i class="ri-dribbble-line"></i>
-                 </a>
-
-                 <a href="https://www.linkedin.com/" target="_blank" class="nav__social-link">
-                    <i class="ri-linkedin-box-line"></i>
-                 </a>
-              </div>
-           </div>
-
-           <!-- Toggle button -->
-           <div class="nav__toggle" id="nav-toggle">
-              <i class="ri-menu-line"></i>
-           </div>
+          <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
         </nav>
-     </header>
+      </header>
 
-     <!--==================== MAIN ====================-->
-     <main>
-        <!-- Insert page sections -->
-     </main>
-     
-     <!--=============== MAIN JS ===============-->
-     <script src="assets/js/main.js"></script>
-    
-</body>
+      <!--==================== HOSTEL BAZAAR SECTION ====================-->
+      <div class="hostel-bazaar">
+         <div class="hostel-box">
+           <div class="image-box">
+             <img src="seamless-background-theme-shopping_615502-1977.jpg" alt="Hostel Bazaar" />
+             <div class="image-text">Hostel Bazaar</div>
+           </div>
+           <div class="content-box">
+             <h1>Hostel Bazaar</h1>
+             <ul>
+               <li>🔹 Buy & Sell: Easily post and discover items available in your hostel.</li>
+               <li>🔹 Affordable Deals: Get budget-friendly prices from fellow students.</li>
+               <li>🔹 Sustainable Trading: Reduce waste by reusing and recycling items.</li>
+               <li>🔹 Convenient & Secure: No need to go outside—everything is within your hostel network.</li>
+             </ul>
+             <p class="highlight">Find. Trade. Save. Welcome to Hostel Bazaar! 🚀</p>
+           </div>
+         </div>
+       </div>
+       
+       
+
+      <!--==================== OTHER SECTIONS ====================-->
+      <div >
+        <div class="functions" id="roommate"><h1>Roommate Finder</h1></div>
+        <div class="functions" id="lostfound"><h1>Lost and Found</h1></div>
+        <div class="functions" id="studybuddy"><h1>Study Buddy</h1></div>
+      </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
