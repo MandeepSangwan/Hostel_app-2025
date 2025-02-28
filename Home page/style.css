@@ -44,14 +44,17 @@ html {
 }
 
 body {
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background-image: url("https://t4.ftcdn.net/jpg/01/76/67/25/360_F_176672598_cJ4yPCFhxvDXm9Cu7vDLIcXpvTMQJ9zm.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
+  
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-image: url("https://t4.ftcdn.net/jpg/01/76/67/25/360_F_176672598_cJ4yPCFhxvDXm9Cu7vDLIcXpvTMQJ9zm.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh; /* Ensures background covers the full screen */
+  }
+  
   
 
 }
@@ -90,23 +93,23 @@ a {
 }
 
 .nav__logo img{
-  height: 85px;
-  width: 85px;
+  height: 80px;
+  width: 80px;
   background-size: cover;
   border: 4px solid rgb(255, 249, 249,0.64);
   border-radius: 10px;
   overflow: hidden;
   left: -140px;
-  top: 10px;
+  top: 0px;
   position: relative;
 
 }
 
 .nav__logo-text{
     color: white;
-    top: -70px;
+    top: -60px;
     position: relative;
-    left: -40px;
+    left: -120px;
 
 }
 
@@ -293,6 +296,16 @@ main {
   justify-content: flex-start;
   padding: 40px;
 }
+.roommate-finder {
+  display: flex;
+  justify-content: flex-start;
+  padding: 40px;
+}
+.lostFound {
+  display: flex;
+  justify-content: flex-start;
+  padding: 40px;
+}
 
 .hostel-box {
   display: flex;
@@ -305,6 +318,29 @@ main {
   width: 100%;
   margin-left: 80px; /* Moves the box slightly to the left */
 }
+.roommate-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  margin-left: 80px; /* Moves the box slightly to the left */
+}
+.lostFound-box {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  margin-left: 80px; /* Moves the box slightly to the left */
+}
+
 
 .image-box {
   position: relative;
@@ -317,6 +353,7 @@ main {
   max-width: 250px;
   border-radius: 10px;
   display: block;
+  border: 2px solid black;
 }
 
 .image-text {
@@ -362,4 +399,28 @@ main {
   font-weight: bold;
   color: #007bff;
   margin-top: 10px;
+}
+.intro-box {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-left: 5px solid #ff9800;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+.highlight-text {
+  color: #e91e63;
+  font-weight: bold;
+}
+
+.content-box ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #4CAF50;
+  text-align: center;
+  font-size: 18px;
 }
