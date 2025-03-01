@@ -1,38 +1,37 @@
-/*=============== GOOGLE FONTS ===============*/
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500&display=swap");
 
-/*=============== VARIABLES CSS ===============*/
+
 :root {
   --header-height: 3.5rem;
 
-  /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
+
   --white-color: hsl(0, 0%, 100%);
   --black-color: hsl(0, 0%, 0%);
 
-  /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
+
+
   --body-font: "Montserrat Alternates", sans-serif;
   --h1-font-size: 1.5rem;
   --normal-font-size: .938rem;
 
-  /*========== Font weight ==========*/
+
   --font-regular: 400;
   --font-medium: 500;
 
-  /*========== z index ==========*/
+
   --z-tooltip: 10;
   --z-fixed: 100;
 }
 
-/*========== Responsive typography ==========*/
+
 @media screen and (min-width: 1150px) {
   :root {
     --normal-font-size: 1rem;
   }
 }
 
-/*=============== BASE ===============*/
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -60,7 +59,7 @@ body {
   
   
 
-}
+
 
 
 ul {
@@ -71,7 +70,7 @@ a {
   text-decoration: none;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
+
 .container {
   max-width: 1120px;
   margin-inline: 1.5rem;
@@ -281,7 +280,7 @@ a {
     column-gap: 3.5rem;
   }
 }
-/* Add margin or padding to ensure content appears below navbar */
+
 main {
   padding-top: calc(var(--header-height) + 2rem); /* Adjust spacing based on your navbar height */
 }
