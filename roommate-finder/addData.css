@@ -1,12 +1,17 @@
 /* Global Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #000;
+    background-image: url(WhatsApp\ Image\ 2025-03-01\ at\ 13.39.37_879c3048.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
     color: #fff;
     margin: 0;
     padding: 0;
     text-align: center;
 }
+
 
 /* Navbar */
 .navbar {
