@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Buddy</title>
+    <link rel="stylesheet" href="stylesb.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Study Buddy</h1>
+            <p>Find your perfect study partner!</p>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#find-buddy">Find a Buddy</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+        
+            <h2>Welcome to Study Buddy</h2>
+            <p>Connect with students who share your academic goals and interests.</p>
+            <a href="#find-buddy" class="btn">Find a Buddy</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Study Buddy</h2>
+            <p>Study Buddy is a platform designed to help students find study partners, join study groups, and collaborate on academic projects. Whether you're preparing for exams or working on assignments, Study Buddy makes it easy to connect with like-minded peers.</p>
+        </div>
+    </section>
+
+    <section id="find-buddy" class="find-buddy">
+        <div class="container">
+            <h2>Find a Study Buddy</h2>
+            <form>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="e.g., Mathematics, Physics" required>
+
+                <label for="level">Course:</label>
+                <select id="level" name="level">
+                    <option value="Btech">Btech</option>
+                    <option value="BBA">BBA</option>
+                    <option value="Medical">Medical</option>
+                </select>
+
+                <label for="location">Room No:</label>
+                <input type="text" id="location" name="location" placeholder="e.g., 421,416" required>
+
+                <button type="submit" class="btn">Search</button>
+            </form>
+        </div>
+    </section>
+
+    
+
+    
+</body>
+</html>
