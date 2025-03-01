@@ -53,7 +53,9 @@ body {
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh; /* Ensures background covers the full screen */
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   
@@ -415,7 +417,7 @@ main {
   padding: 20px;
   box-shadow: 0px 4px 8px rgba(10, 10, 10, 0.2); /* Light glow effect */
     transition: all 0.3s ease-in-out;
-    color: white=;
+    color: white;
 }
 .content-box :hover{
   transform: translateY(-3px); /* Slight lift on hover */
