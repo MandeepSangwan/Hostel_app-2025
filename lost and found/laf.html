@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost and Found</title>
+    <link rel="stylesheet" href="lafstyle.css">
+</head>
+<body>
+    <header>
+        <h1>Lost and Found</h1>
+        <p>Helping you find what you've lost</p>
+    </header>
+
+    <section class="report-form">
+        <h2>Report a Lost or Found Item</h2>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="item">Item Name:</label>
+            <input type="text" id="item" name="item" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="type">Type:</label>
+            <select id="type" name="type">
+                <option value="lost">Lost</option>
+                <option value="found">Found</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section class="recent-items">
+        <h2>Recent Lost and Found Items</h2>
+        <div class="item-list">
+            <div class="item">
+                <h3>Lost: Wallet</h3>
+                <p><strong>Description:</strong> Black leather wallet with ID and credit cards.</p>
+                <p><strong>Reported by:</strong> John Doe</p>
+            </div>
+            <div class="item">
+                <h3>Found: Keys</h3>
+                <p><strong>Description:</strong> Set of car and house keys.</p>
+                <p><strong>Reported by:</strong> Jane Smith</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Lost and Found. All rights reserved.</p>
+    </footer>
+</body>
+</html>
