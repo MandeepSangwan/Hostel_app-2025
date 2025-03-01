@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roommate Finder</title>
+    <link rel="stylesheet" href="addData.css">
+    <script defer src="addData.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Roommate Finder</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" id="addDataBtn">Add Your Data</a></li>
+            <li><a href="#" id="removeDataBtn">Remove Your Data</a></li>
+        </ul>
+    </nav>
+
+    <!-- Card Slider -->
+    <div class="slider-container">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="slider-wrapper">
+            <div class="slider" id="cardSlider">
+                <!-- Default Cards -->
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" alt="User">
+                    <h3>John Doe</h3>
+                    <p>Age: 21</p>
+                    <p>Semester: 4</p>
+                    <p>Branch: CSE</p>
+                    <p>Hobbies: Gaming, Coding</p>
+                    <p>Contact: 9876543210</p>
+                </div>
+            </div>
+        </div>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <!-- Add Data Form -->
+    <div id="popupForm" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeForm('popupForm')">&times;</span>
+            <h2>Add Your Data</h2>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="number" id="age" placeholder="Your Age" required>
+            <input type="number" id="semester" placeholder="Your Semester" required>
+            <input type="text" id="branch" placeholder="Your Branch" required>
+            <input type="text" id="hobbies" placeholder="Your Hobbies" required>
+            <input type="text" id="contact" placeholder="Your Contact No." required>
+            <input type="text" id="imageURL" placeholder="Image URL (optional)">
+            <button onclick="addNewCard()">Submit</button>
+        </div>
+    </div>
+
+    <!-- Remove Data Form -->
+    <div id="removePopupForm" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeForm('removePopupForm')">&times;</span>
+            <h2>Remove Your Data</h2>
+            <input type="text" id="removeName" placeholder="Enter Your Name" required>
+            <button onclick="removeCard()">Remove</button>
+        </div>
+    </div>
+
+</body>
+</html>
